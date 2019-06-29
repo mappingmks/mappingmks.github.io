@@ -175,7 +175,6 @@
 
         $(function() {
             $('[data-toggle="tooltip"]').tooltip();
-			$('body').hide();
         })
 
         $("body").append('<div id="toTop" class="btn-to-top" data-toggle="tooltip" data-placement="top" title="back to top"><i class="fa fa-chevron-up"></i></div>'),$(window).scroll(function(){$(this).scrollTop()>50?($("#toTop").fadeIn(),$("nav.navbar").removeClass("bg-dark").addClass("bg-primary")):($("#toTop").fadeOut(),$("nav.navbar").removeClass("bg-primary").addClass("bg-dark"))}),$("#toTop").click(function(){$("html, body").animate({scrollTop:0},600)});
